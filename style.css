@@ -1,11 +1,4 @@
 * {
-  background: rgb(89, 13, 34);
-  background: radial-gradient(
-    circle,
-    rgba(89, 13, 34, 1) 0%,
-    rgba(181, 40, 40, 1) 52%,
-    rgba(89, 13, 34, 1) 100%
-  );
   box-sizing: border-box;
 }
 .display {
@@ -19,14 +12,8 @@
   column-gap: 100px;
 }
 
-.letras {
-  color: white;
-  font-family: "Press Start 2P", cursive;
-  text-align: center;
-}
-
 .cards {
   border: 1px solid black;
   width: 150px;
-  height: 350px;
+  height: 100px;
 }
