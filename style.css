@@ -1,5 +1,10 @@
-* {
+body {
     box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
+    border: 1px solid black;
 }
 .display {
     border: 1px solid black;
@@ -10,10 +15,13 @@
     align-items: center;
     justify-content: center;
     column-gap: 100px;
-
+    
+    
 }
 .cards {
     border: 1px solid black;
-    width: 150px;
-    height: 100px;
+    width: 70%;
+    height: 70%;
+    outline: none;
+    
 }
