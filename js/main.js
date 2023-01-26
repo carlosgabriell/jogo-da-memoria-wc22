@@ -46,3 +46,25 @@ const loadGame = () => {
 };
 
 loadGame();
+
+// cronometro
+const countTime = document.querySelector(".time");
+let hours = 0;
+let minutes = 0;
+let seconds = 0;
+
+
+setInterval(function() {
+  seconds++;
+  if(seconds == 60) {
+    seconds = 0;
+    minutes++;
+
+    if(minutes == 60) {
+      minutes = 0;
+      hours++;
+    }
+  } 
+  countTime.innerHTML = (hours < 10 ? '0' + hours : hours) + ':' + (minutes < 10 ? '0' + minutes : minutes) + ':' + (seconds<10 ? '0' + seconds : seconds); 
+  
+}, 1000);
