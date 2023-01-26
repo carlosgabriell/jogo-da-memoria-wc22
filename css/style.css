@@ -19,10 +19,11 @@ body {
 }
 .bar {
   list-style: none;
+  margin-top: 30px;
   display: flex;
   font-size: 1.5rem;
   justify-content: center;
-  gap: 200px;
+  gap: 150px;
 }
 .forward-icon {
   width: 25px;
@@ -30,10 +31,47 @@ body {
 .heart-icon {
   display: flex;
   list-style: none;
+  gap: 5px;
+  position: relative;
 }
-.icon {
-  width: 18px;
+.heart {
+  width: 20px;
+  
 }
+#heart1 {
+  position: relative;
+  animation: heartAnimation 2s infinite;
+}
+#heart2 {
+  position: relative;
+  animation: heartAnimation 2s infinite;
+}
+#heart3 {
+  position: relative;
+  animation: heartAnimation 2s infinite;
+}
+#heart4 {
+  position: relative;
+  animation: heartAnimation 2s infinite;
+}
+#heart5 {
+  position: relative;
+  animation: heartAnimation 2s infinite;
+}
+@keyframes heartAnimation {
+  0% {
+    width: 20px;
+  } 50% {
+    width: 22px;
+  } 100% {
+    width: 20px;
+  }
+}
+.time {
+  width: 120px;
+  font-family: 'Manrope', sans-serif;
+  
+} 
 .grid {
   display: grid;
   grid-template-columns: repeat(8, 1.5fr);

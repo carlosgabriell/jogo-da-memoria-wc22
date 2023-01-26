@@ -112,3 +112,40 @@ function timer() {
   } 
   countTime.innerHTML = (hours < 10 ? '0' + hours : hours) + ':' + (minutes < 10 ? '0' + minutes : minutes) + ':' + (seconds<10 ? '0' + seconds : seconds); 
 }
+
+function heartLoss(){
+  let lifes = 5;
+
+  const hearts = ['heart1','heart2','heart3','heart4','heart5'];
+  const hearts_icon = {
+    'heart1' : document.getElementById("heart1"),
+    'heart2' : document.getElementById("heart2"),
+    'heart3' : document.getElementById("heart3"),
+    'heart4' : document.getElementById("heart4"),
+    'heart5' : document.getElementById("heart5")
+  }
+  
+  lifes--;
+  (lifes == 4 ? hearts_icon[hearts[4]].src= 'assets/svgs-icon/heart-loss.svg' : '');
+  lifes--;
+  (lifes == 3 ? hearts_icon[hearts[3]].src= 'assets/svgs-icon/heart-loss.svg' : '');
+  (lifes == 2 ? hearts_icon[hearts[2]].src= 'assets/svgs-icon/heart-loss.svg' : '');
+  (lifes == 1 ? hearts_icon[hearts[1]].src= 'assets/svgs-icon/heart-loss.svg' : '');
+  (lifes == 0 ? hearts_icon[hearts[0]].src= 'assets/svgs-icon/heart-loss.svg' : '');
+  
+    
+}
+heartLoss();
+
+
+
+/*
+let hearts = {
+    heart1: document.getElementById('heart1'),
+    heart2: document.getElementById('heart2'),
+    heart3: document.getElementById('heart3'),
+    heart4: document.getElementById('heart4'),
+    heart5: document.getElementById('heart5'),
+  }
+    hearts.heart5.src= 'assets/svgs-icon/heart-loss.svg';
+*/ 
