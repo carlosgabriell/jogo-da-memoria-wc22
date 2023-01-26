@@ -17,14 +17,23 @@ body {
   font-weight: bold;
   margin-bottom: 50px;
 }
-nav ul {
+.bar {
   list-style: none;
   display: flex;
   font-size: 1.5rem;
   justify-content: center;
   gap: 200px;
 }
-
+.forward-icon {
+  width: 25px;
+}
+.heart-icon {
+  display: flex;
+  list-style: none;
+}
+.icon {
+  width: 18px;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(8, 1.5fr);
@@ -64,7 +73,7 @@ nav ul {
 }
 
 .back {
-  background-image: url("../images/card_images/face\ back\ card.jpg");
+  background-image: url("../assets/card_images/face\ back\ card.jpg");
   backface-visibility: hidden;
 }
 
