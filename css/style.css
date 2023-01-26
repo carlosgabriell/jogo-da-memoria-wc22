@@ -7,10 +7,23 @@ body {
     rgba(81, 182, 164, 1) 100%
   );
   box-sizing: border-box;
-  text-align: center;
-  align-items: center;
   margin: 0 auto;
   height: 100vh;
+}
+.title {
+  color: white;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  font-weight: bold;
+  border: 1px solid black;
+  margin-bottom: 50px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  gap: 200px;
 }
 
 .grid {
@@ -56,22 +69,5 @@ body {
   backface-visibility: hidden;
 }
 
-.title {
-  color: white;
-  text-align: center;
-  font-family: "Press Start 2P", cursive;
-}
 
-.title h2 {
-  margin-left: 50px;
-  color: white;
-  text-align: center;
-  font-family: "Press Start 2P", cursive;
-}
 
-.score {
-  margin-left: 50px;
-  color: white;
-  text-align: center;
-  font-family: "Press Start 2P", cursive;
-}
