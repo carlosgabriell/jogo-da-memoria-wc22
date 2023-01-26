@@ -15,7 +15,6 @@ body {
   text-align: center;
   font-family: "Press Start 2P", cursive;
   font-weight: bold;
-  border: 1px solid black;
   margin-bottom: 50px;
 }
 nav ul {
@@ -28,7 +27,7 @@ nav ul {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1.5fr);
   gap: 15px;
   width: 100%;
   max-width: 1200px;
@@ -65,7 +64,7 @@ nav ul {
 }
 
 .back {
-  background-image: url("../images/card images/face\ back\ card.jpg");
+  background-image: url("../images/card_images/face\ back\ card.jpg");
   backface-visibility: hidden;
 }
 
