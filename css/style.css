@@ -40,31 +40,31 @@ body {
 }
 #heart1 {
   position: relative;
-  animation: heartAnimation 2s infinite;
+  animation: heartAnimation 0.7s infinite;
 }
 #heart2 {
   position: relative;
-  animation: heartAnimation 2s infinite;
+  animation: heartAnimation 0.7s infinite;
 }
 #heart3 {
   position: relative;
-  animation: heartAnimation 2s infinite;
+  animation: heartAnimation 0.7s infinite;
 }
 #heart4 {
   position: relative;
-  animation: heartAnimation 2s infinite;
+  animation: heartAnimation 0.7s infinite;
 }
 #heart5 {
   position: relative;
-  animation: heartAnimation 2s infinite;
+  animation: heartAnimation 0.7s infinite;
 }
 @keyframes heartAnimation {
   0% {
-    width: 20px;
+    bottom: 0px;
   } 50% {
-    width: 22px;
+    bottom: 2px;
   } 100% {
-    width: 20px;
+    bottom: 0px;
   }
 }
 .time {
