@@ -46,15 +46,60 @@ const loadGame = () => {
 };
 
 loadGame();
+// play button
+const playBtn = document.querySelector(".play_btn");
+var pressed = true;
+
+playBtn.addEventListener('click', () => {
+  if(pressed) {
+    startTimer();
+    playBtn.src = "assets/svgs-icon/pause.svg";
+    pressed = false;
+  } else if(pressed === false) {
+    playBtn.src = "assets/svgs-icon/play.svg";
+    pauseTimer();
+    pressed = true
+  }
+});
+
+// reset button
+const resetBtn = document.querySelector('.forward-icon') 
+
+resetBtn.addEventListener('click', ()=> {
+  pressed = true;
+  if(pressed) {
+    resetTimer();
+    playBtn.src = "assets/svgs-icon/play.svg";
+  }
+}); 
 
 // cronometro
 const countTime = document.querySelector(".time");
 let hours = 0;
 let minutes = 0;
 let seconds = 0;
+let time;
 
+function startTimer() {
+  time = setInterval(timer, 1000);
+}
 
-setInterval(function() {
+function pauseTimer() {
+  clearInterval(time);
+}
+
+function resetTimer() {
+  clearInterval(time);
+  hours
+  hours = 0;
+  minutes = 0;
+  seconds = 0;
+
+  countTime.innerHTML = '00:00:00'; 
+
+} 
+
+function timer() {
   seconds++;
   if(seconds == 60) {
     seconds = 0;
@@ -66,5 +111,4 @@ setInterval(function() {
     }
   } 
   countTime.innerHTML = (hours < 10 ? '0' + hours : hours) + ':' + (minutes < 10 ? '0' + minutes : minutes) + ':' + (seconds<10 ? '0' + seconds : seconds); 
-  
-}, 1000);
+}
