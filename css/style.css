@@ -13,7 +13,7 @@ body {
 .title {
   color: white;
   text-align: center;
-  font-family: "Press Start 2P", cursive;
+  font-family: "Unbounded", cursive;
   font-weight: bold;
   margin-bottom: 50px;
 }
@@ -36,7 +36,6 @@ body {
 }
 .heart {
   width: 20px;
-  
 }
 #heart1 {
   position: relative;
@@ -61,17 +60,18 @@ body {
 @keyframes heartAnimation {
   0% {
     bottom: 0px;
-  } 50% {
+  }
+  50% {
     bottom: 2px;
-  } 100% {
+  }
+  100% {
     bottom: 0px;
   }
 }
 .time {
   width: 120px;
-  font-family: 'Manrope', sans-serif;
-  
-} 
+  font-family: "Manrope", sans-serif;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(8, 1.5fr);
@@ -80,7 +80,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .card {
   aspect-ratio: 3/4;
   width: 100%;
@@ -89,10 +88,6 @@ body {
   position: relative;
   transition: all 400ms ease;
   transform-style: preserve-3d;
-}
-
-.card:hover {
-  transform: rotateY(180deg);
 }
 
 .face {
@@ -115,5 +110,11 @@ body {
   backface-visibility: hidden;
 }
 
+.reveal-card {
+  transform: rotateY(180deg);
+}
 
-
+.disabled-card {
+  filter: saturate(0);
+  opacity: 0.5;
+}
