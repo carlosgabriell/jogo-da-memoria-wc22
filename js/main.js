@@ -172,6 +172,7 @@ function timer() {
     (seconds < 10 ? "0" + seconds : seconds);
 }
 
+// vidas
 function heartLoss() {
   let lifes = 5;
 
@@ -204,13 +205,3 @@ function heartLoss() {
 }
 heartLoss();
 
-/*
-let hearts = {
-    heart1: document.getElementById('heart1'),
-    heart2: document.getElementById('heart2'),
-    heart3: document.getElementById('heart3'),
-    heart4: document.getElementById('heart4'),
-    heart5: document.getElementById('heart5'),
-  }
-    hearts.heart5.src= 'assets/svgs-icon/heart-loss.svg';
-*/
